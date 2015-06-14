@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>bitdog_client</Name>
+    <RootNamespace>iotbridge</RootNamespace>
+    <ScriptArguments>
+    </ScriptArguments>
+    <NodeExeArguments>
+    </NodeExeArguments>
+    <LaunchUrl>http://localhost:2000</LaunchUrl>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>98e0e880-fdbe-4570-a2c7-2bcf4cff519b</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>examples\example.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="examples\example.js" />
+    <Compile Include="lib\admin\expressapp.js" />
+    <Compile Include="lib\admin\managers\adminManager.js" />
+    <Compile Include="lib\admin\public\javascripts\statusUpdateController.js" />
+    <Compile Include="lib\admin\public\javascripts\validator.js" />
+    <Compile Include="lib\admin\routes\api.js" />
+    <Compile Include="lib\admin\routes\logoff.js" />
+    <Compile Include="lib\admin\routes\manage.js" />
+    <Compile Include="lib\admin\routes\changePassword.js" />
+    <Compile Include="lib\admin\routes\context.js" />
+    <Compile Include="lib\admin\routes\home.js" />
+    <Compile Include="lib\admin\routes\login.js" />
+    <Compile Include="lib\admin\routes\notfound.js" />
+    <Compile Include="lib\admin\routes\register.js" />
+    <Compile Include="lib\agent\agentServer.js" />
+    <Compile Include="lib\agent\session.js" />
+    <Compile Include="lib\cli\cliServer.js" />
+    <Compile Include="lib\cli\expressapp.js" />
+    <Compile Include="lib\commandInterface.js" />
+    <Compile Include="lib\commonMessageSchemas.js" />
+    <Compile Include="lib\connection.js" />
+    <Compile Include="lib\dataInterface.js" />
+    <Compile Include="lib\processConnection.js" />
+    <Compile Include="lib\signalRConnection.js" />
+    <Compile Include="lib\agentProcess.js" />
+    <Compile Include="lib\userCodeProcess.js" />
+    <Compile Include="lib\userCode\userCodeServer.js" />
+    <Compile Include="lib\webAdminProcess.js" />
+    <Compile Include="lib\admin\webserver.js" />
+    <Compile Include="lib\bitdog.js" />
+    <Compile Include="lib\configuration.js" />
+    <Compile Include="lib\command.js" />
+    <Compile Include="lib\commandManager.js" />
+    <Compile Include="lib\session.js" />
+    <Compile Include="lib\constants.js" />
+    <Compile Include="lib\coreMessageSchemas.js" />
+    <Compile Include="lib\helpers.js" />
+    <Compile Include="lib\logger.js" />
+    <Compile Include="lib\messageSchema.js" />
+    <Compile Include="lib\dataCollector.js" />
+    <Compile Include="lib\dataManager.js" />
+    <Compile Include="lib\dataPoller.js" />
+    <Compile Include="lib\hashset.js" />
+    <Compile Include="lib\hashtable.js" />
+    <Compile Include="lib\question.js" />
+    <Compile Include="lib\questionManager.js" />
+    <Compile Include="lib\subscriptionManager.js" />
+    <Compile Include="lib\subscription.js" />
+    <None Include=".npmignore" />
+    <Content Include="bin\bitdog" />
+    <Content Include="bin\config.json" />
+    <Content Include="docs\configurationMessage.md" />
+    <Content Include="docs\dataMessage.md" />
+    <Content Include="docs\protocol.md" />
+    <Content Include="docs\questionMessage.md" />
+    <Content Include="docs\subscriptionMessage.md" />
+    <Content Include="lib\admin\public\images\logo.png" />
+    <Content Include="lib\admin\public\stylesheets\style.css" />
+    <Content Include="lib\admin\views\error.ejs" />
+    <Content Include="lib\admin\views\changePassword.ejs" />
+    <Content Include="lib\admin\views\manage.ejs" />
+    <Content Include="lib\admin\views\home.ejs" />
+    <Content Include="lib\admin\views\layout.ejs" />
+    <Content Include="lib\admin\views\login.ejs" />
+    <Content Include="lib\admin\views\register.ejs" />
+    <Content Include="log\log.txt" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="run\run.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\admin\" />
+    <Folder Include="lib\admin\managers\" />
+    <Folder Include="lib\admin\public\" />
+    <Folder Include="lib\admin\public\images\" />
+    <Folder Include="lib\admin\public\javascripts\" />
+    <Folder Include="lib\admin\public\stylesheets\" />
+    <Folder Include="lib\admin\routes\" />
+    <Folder Include="lib\admin\views\" />
+    <Folder Include="lib\cli\" />
+    <Folder Include="lib\agent\" />
+    <Folder Include="lib\userCode\" />
+    <Folder Include="examples\" />
+    <Folder Include="log\" />
+    <Folder Include="docs\" />
+    <Folder Include="run\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
