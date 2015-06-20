@@ -37,7 +37,7 @@ bitdog.on('ready', function (logger, configuration) {
     
     setInterval(function () {
         isOn = !isOn;
-        bitdog.sendCommand('6d0c726b-b60e-4e6f-b8e0-2d76109c5527', 'Turn light on/off', bitdog.commonMessageSchemas.onOffMessageSchema, function (message) {
+        bitdog.sendCommand('bfed21e0-6822-423e-a1f4-3b4d98bdc2cf', 'Turn light on/off', bitdog.commonMessageSchemas.onOffMessageSchema, function (message) {
             message.value = isOn ? 'off' : 'on';
         });
 
