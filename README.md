@@ -13,6 +13,7 @@
 
 [![GitHub version](https://badge.fury.io/gh/bitdog-io%2Fbitdog-client.png)](http://badge.fury.io/gh/bitdog-io%2Fbitdog-client)
 
+
 # Overview
 Bitdog is a simple to use collection of Node.js API, mobile apps, and cloud based tools that allows IoT hobbyists and inventors to control and monitor any device that can run Node.js. With as little as ten lines of code, you can start monitoring sensors and controlling devices.  Create an account at https://bitdog.io and start your IoT project today.
 
@@ -20,16 +21,16 @@ Bitdog is a simple to use collection of Node.js API, mobile apps, and cloud base
 
 ## bitdog-client
 
-### addCommand(name, messageType, executeCallback [,startCallback][,stopCallback])
+### addCommand(name, messageSchema, executeCallback [,startCallback][,stopCallback])
 
 This function can wrap any code and make it callable from any Bitdog web or mobile application.
  
 	// Retrieve the bitdog-client interface
 	var bitdog = require('bitdog-client');
 
-	// Create a command with a common message type
+	// Create a command with a common message schema
 	bitdog.addCommand('Turn light on/off',
-	bitdog.commonMessageTypes.onOffMessageType,
+	bitdog.commonMessageSchemas.onOffMessageSchema,
 	function (message, configuration, logger) {
 
     	// Every time this command is received, we will simply log the fact
@@ -37,7 +38,7 @@ This function can wrap any code and make it callable from any Bitdog web or mobi
 
 	});
 
-### addDataCollector(name, messageType, intervalMilliseconds, collectCallback)
+### addDataCollector(name, messageSchema, intervalMilliseconds, collectCallback)
 
 This function creates a timer that will invoke code at a set interval and collect data to be sent back to Bitdog Cloud. The data sent back can be used to create graphs and charts or be used as input to an automation orchestration. 
 
@@ -46,7 +47,7 @@ This function creates a timer that will invoke code at a set interval and collec
 
 	// Create a new data collector for our position sensor
     var positionDataCollector = bitdog.addDataCollector('Position', 
-	bitdog.commonMessageTypes.mapPositionMessageType ,
+	bitdog.commonMessageSchemas.mapPositionMessageSchema ,
 	10000, 
 	function (message, configuration, logger) {
     
@@ -69,15 +70,15 @@ This function registers a text question and its answer with Bitdog Cloud.The que
     
 
 
-### createMessageType(name)
+### createMessageSchema(name)
 
-Data used for Bitdog data collectors and commands can be of nearly any shape and type. This function creates custom message types.
+Data used for Bitdog data collectors and commands can be of nearly any shape and type. This function creates custom message schemas.
 
 	// Retrieve the bitdog-client interface
 	var bitdog = require('bitdog-client');
 
-	// Create a message type called MyType
-    var messageType = bitdog.createMessageType('MyType')
+	// Create a message schema called MySchema
+    var messageSchema = bitdog.createMessageType('MySchema')
 			// Add a number property to hold a value
 			// Set the default value to zero
             .addNumberProperty('waterlevel', 0)
@@ -100,7 +101,7 @@ Emitted after the start method is called and the bitdog-client as able to connec
 
 		    bitdog.sendCommand('8d5ba206-97b4-4fdc-bc81-0365cc660afe',
 								'Turn light on/off',
-							 	bitdog.commonMessageTypes.onOffMessageType,
+							 	bitdog.commonMessageSchema.onOffMessageSchema,
 								function (message) {
 		    						message.value = isOn ? 'off' : 'on';
 	    						});
@@ -135,25 +136,31 @@ This function starts a connection with the Bitdog Cloud service and starts data 
 
 	bitdog.start();
 
-## MessageType
+## MessageSchema
+Message schema defines the what kind of data is contained in a message payload.
 
 ### addNumberProperty(name, defaultValue [,limits])
+This function adds a number property to the message schema.
 
 ### addStringProperty(name, defaultValue [,limits])
+This function adds a string property to the message schema.
 
 ### addDateTimeProperty(name, defaultValue [,limits])
+This function adds a datetime property to the message schema.
 
 ### addArrayProperty(name, defaultValue [,limits])
+This function adds an array property to the message schema.
 
 ### addObjectProperty(name, defaultValue [,limits])
+This function adds an object property to the message schema. 
 	
-## commonMessageTypes
-### rotationMessageType
-### valueMessageType
-### textMessageType
-### onOffMessageType
-### mapPositionMessageType
-### positionMessageType
+## commonMessageSchemas
+### rotationMessageSchema
+### valueMessageSchema
+### textMessageSchema
+### onOffMessageSchema
+### mapPositionMessageSchema
+### positionMessageSchema
 
 ## Example
 
@@ -161,9 +168,9 @@ This function starts a connection with the Bitdog Cloud service and starts data 
     var bitdog = require('bitdog-client');
     var isOn = false;
     
-    // Create a command with a common message type
+    // Create a command with a common message schema
     bitdog.addCommand('Turn light on/off',
-	bitdog.commonMessageTypes.onOffMessageType,
+	bitdog.commonMessageTypes.onOffMessageSchema,
 	function (message, configuration, logger) {
     
 	    // Every time this command is received, we will simply log the fact
@@ -174,7 +181,7 @@ This function starts a connection with the Bitdog Cloud service and starts data 
     
     // Create a new data collector for our position sensor
     var positionDataCollector = bitdog.addDataCollector('Position', 
-	bitdog.commonMessageTypes.mapPositionMessageType ,
+	bitdog.commonMessageSchema.mapPositionMessageSchema ,
 	10000, 
 	function (message, configuration, logger) {
     
@@ -204,7 +211,7 @@ This function starts a connection with the Bitdog Cloud service and starts data 
 
 		    bitdog.sendCommand('8d5ba206-97b4-4fdc-bc81-0365cc660afe',
 								'Turn light on/off',
-							 	bitdog.commonMessageTypes.onOffMessageType,
+							 	bitdog.commonMessageSchema.onOffMessageSchema,
 								function (message) {
 		    						message.value = isOn ? 'off' : 'on';
 	    						});
