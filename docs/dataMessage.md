@@ -10,7 +10,6 @@ Data messages are sent from a node to notify of data changes or to periodically 
 			
 			// (h.c) Message class
 			// The message class defines the kind of message this is.
-			// There are five kinds of messages data, command, subscription, question, and configuration
 			"c":"data",
 
 			// (h.n) Message name

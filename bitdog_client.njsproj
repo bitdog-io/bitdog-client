@@ -87,7 +87,10 @@
     <None Include=".npmignore" />
     <Content Include="bin\bitdog" />
     <Content Include="bin\config.json" />
+    <Content Include="docs\registerMessage.md" />
+    <Content Include="docs\commandMessage.md" />
     <Content Include="docs\configurationMessage.md" />
+    <Content Include="docs\pairMessage.md" />
     <Content Include="docs\dataMessage.md" />
     <Content Include="docs\protocol.md" />
     <Content Include="docs\questionMessage.md" />

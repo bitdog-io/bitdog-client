@@ -11,7 +11,6 @@ during initial connection with the hub.
 			    
 			// (h.c) Message class
 			// The message class defines the kind of message this is.
-			// There are five kinds of messages data, command, subscription, question, and configuration
 			"c":"configuration",  
 
 		},

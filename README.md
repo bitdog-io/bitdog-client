@@ -11,6 +11,8 @@
 
 [![NPM](https://nodei.co/npm-dl/bitdog-client.png?height=3)](https://nodei.co/npm/bitdog-client/)
 
+[![GitHub version](https://badge.fury.io/gh/bitdog-io%2Fbitdog-client.png)](http://badge.fury.io/gh/bitdog-io%2Fbitdog-client)
+
 # Overview
 Bitdog is a simple to use collection of Node.js API, mobile apps, and cloud based tools that allows IoT hobbyists and inventors to control and monitor any device that can run Node.js. With as little as ten lines of code, you can start monitoring sensors and controlling devices.  Create an account at https://bitdog.io and start your IoT project today.
 

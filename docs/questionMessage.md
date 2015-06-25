@@ -9,7 +9,6 @@ Question messages are sent by the node to the hub to register a question answer 
 	"h": { 
 			// (h.c) Message class
 			// The message class defines the kind of message this is.
-			// There are five kinds of messages data, command, subscription, question, and configuration
 			"c":"question",
 
 		},

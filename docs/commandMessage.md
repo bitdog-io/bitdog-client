@@ -1,30 +1,31 @@
-﻿#Subscription message
-Subscription messages are sent by the node to the hub to request a subscription to a data topic.
+﻿#Command message
+Command messages are sent from a node to another node to invoke an action.
 
-##Example subscription message
+##Example command message
  
 	{
 	// (h) Message header
 	// This property is created by the node and describes the content of the data message
 	"h": { 
+			
 			// (h.c) Message class
 			// The message class defines the kind of message this is.
-			// There are five kinds of messages data, command, subscription, question, and configuration
-			"c":"subscription",
+			"c":"command",
 
+			// (h.n) Message name
+			// This is a unique name for the command on the node.		
+			"n":"Turn on/off light", 
+
+			// (h.d) Destination node id.
+			// This is the node id of the node to send the command to.
+			"d":"234234-234234-2342-23423-2342"
 		},
 
 	// (d) Message data
-	// This property is created by the node and represents the data payload of the message.
+	// This property is created by the sending node and represents the commnad payload of the message.
 	"d": {
-			// (d.i) Source node filter.
-			"i":"*",
-			  
-			// (d.n) Message data source name filter.    
-			"n":"Position",
-
-			// (d.m) Subscription mode "add" or "remove".
-			"m":"add"
+			// Any data as defined by the message data type  
+			"light":"on"  
 		},
 
 	// (c) Hub header
@@ -41,12 +42,7 @@ Subscription messages are sent by the node to the hub to request a subscription 
 			"p":"169.77.83.12",
 
 			// (c.n) The node id of the message source
-			// Only present when message comes from a node
 			"n":"555555555555-b07e-4ceb-b9e1-555555555555",
-
-			// (c.u) The user of the message source
-			// Only present when message comes from an administration application
-			"u":"person@domain.com"
 
 			// (c,r) The realm id of the message source node
 			"r":"555555555555-d172-4121-bb68-555555555555"
