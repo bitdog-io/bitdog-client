@@ -1,7 +1,7 @@
 {
-  "auth_key": "",
+  "auth_key": "d2bb241e-9045-4afb-b66a-24fc6e180060",
   "logging": {
-    "log_messages": false,
+    "log_messages": true,
     "log_connection_events": false,
     "log_process_events": false,
     "log_suppress_logo": false
