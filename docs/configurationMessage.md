@@ -18,8 +18,8 @@ during initial connection with the hub.
 	// (d) Message data
 	// This property is created by the node and represents the data payload of the message.
 	"d": {
-			// (d.messageTypes) Message types define the messages that a node can consume or emit.
-			"messageTypes":[
+			// (d.messageSchemas) Message schemas define the messages that a node can consume or emit.
+			"messageSchemas":[
 						{
 							"messageClass":"data",
 							"name":"Position",

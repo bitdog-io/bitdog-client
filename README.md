@@ -170,7 +170,7 @@ This function adds an object property to the message schema.
     
     // Create a command with a common message schema
     bitdog.addCommand('Turn light on/off',
-	bitdog.commonMessageTypes.onOffMessageSchema,
+	bitdog.commonMessageSchemas.onOffMessageSchema,
 	function (message, configuration, logger) {
     
 	    // Every time this command is received, we will simply log the fact
