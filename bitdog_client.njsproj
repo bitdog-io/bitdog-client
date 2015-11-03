@@ -80,8 +80,6 @@
     <Compile Include="lib\dataPoller.js" />
     <Compile Include="lib\hashset.js" />
     <Compile Include="lib\hashtable.js" />
-    <Compile Include="lib\question.js" />
-    <Compile Include="lib\questionManager.js" />
     <Compile Include="lib\subscriptionManager.js" />
     <Compile Include="lib\subscription.js" />
     <None Include=".npmignore" />
@@ -93,7 +91,6 @@
     <Content Include="docs\pairMessage.md" />
     <Content Include="docs\dataMessage.md" />
     <Content Include="docs\protocol.md" />
-    <Content Include="docs\questionMessage.md" />
     <Content Include="docs\subscriptionMessage.md" />
     <Content Include="lib\admin\public\images\logo.png" />
     <Content Include="lib\admin\public\stylesheets\style.css" />

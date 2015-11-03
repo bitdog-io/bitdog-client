@@ -2,9 +2,9 @@
   "auth_key": "",
   "logging": {
     "log_messages": true,
-    "log_connection_events": false,
-    "log_process_events": false,
-    "log_suppress_logo": false
+    "log_connection_events": true,
+    "log_process_events": true,
+    "log_suppress_logo": true
   },
   "webadmin": {
     "enable": true,

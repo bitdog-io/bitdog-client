@@ -23,9 +23,6 @@ var positionDataCollector = bitdog.addDataCollector('Position', bitdog.commonMes
    
 });
 
-// Create a new question and answer  
-bitdog.addQuestion('How many lights are on', 'There are two lights on');
-
 // Create a new subscription
 bitdog.addSubscription('*', 'Position', 'add', function (message, configuration, logger) {
     logger.log('User','Message consumed', message);
