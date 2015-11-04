@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "bitdog-client",
     "version": "0.0.22",
     "description": "Monitor and control your IoT devices.",
@@ -43,7 +43,7 @@
         "node-uuid": "^1.4.3",
         "portchecker": "^0.1.2",
         "serve-favicon": "^2.2.1",
-        "signalr-client": "0.0.12",
+        "signalr-client": "0.0.15",
         "stylus": "^0.50.0",
         "temp": "^0.8.1"
     }
