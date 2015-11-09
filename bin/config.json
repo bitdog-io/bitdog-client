@@ -2,7 +2,7 @@
   "auth_key": "",
   "logging": {
     "log_messages": false,
-    "log_connection_events": true,
+    "log_connection_events": false,
     "log_process_events": false,
     "log_suppress_logo": false
   },
