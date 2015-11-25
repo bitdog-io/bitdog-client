@@ -39,7 +39,7 @@
     "morgan": "^1.6.1",
     "native-password-hash": "^1.1.0",
     "nconf": "^0.7.2",
-    "node-uuid": "^1.4.3",
+    "node-uuid": "^1.4.7",
     "portchecker": "^0.1.2",
     "serve-favicon": "^2.2.1",
     "signalr-client": "0.0.15",
