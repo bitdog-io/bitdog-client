@@ -42,7 +42,7 @@
     "node-uuid": "^1.4.7",
     "portchecker": "^0.1.2",
     "serve-favicon": "^2.2.1",
-    "signalr-client": "0.0.15",
+    "signalr-client": "^0.0.16",
     "stylus": "^0.50.0",
     "temp": "^0.8.1"
   }
