@@ -32,7 +32,7 @@
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
     "ejs-locals": "^1.0.2",
-    "express": "^4.12.4",
+    "express": "^4.13.3",
     "getmac": "^1.0.7",
     "jsr-pattern": "^0.2.3",
     "moment": "^2.10.6",
@@ -41,9 +41,9 @@
     "nconf": "^0.7.2",
     "node-uuid": "^1.4.7",
     "portchecker": "^0.1.2",
-    "serve-favicon": "^2.2.1",
-    "signalr-client": "^0.0.16",
+    "serve-favicon": "^2.3.0",
+    "signalr-client": "0.0.16",
     "stylus": "^0.50.0",
-    "temp": "^0.8.1"
+    "temp": "^0.8.3"
   }
 }
