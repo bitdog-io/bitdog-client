@@ -14,14 +14,14 @@ bitdog.addCommand('Turn light on/off',  bitdog.commonMessageSchemas.onOffMessage
 
 
 // Create a new data collector for our position sensor
-var positionDataCollector = bitdog.addDataCollector('Position', bitdog.commonMessageSchemas.mapPositionMessageSchema , 10000, function (message, configuration, logger) {
+//var positionDataCollector = bitdog.addDataCollector('Position', bitdog.commonMessageSchemas.mapPositionMessageSchema , 10000, function (message, configuration, logger) {
     
-    // Instead of collecting real data, we are just sending random data
-    // for this test
-    message.latitude = Math.floor((Math.random() * 100) + 1);
-    message.longitude = Math.floor((Math.random() * 100) + 1);
+//    // Instead of collecting real data, we are just sending random data
+//    // for this test
+//    message.latitude = Math.floor((Math.random() * 100) + 1);
+//    message.longitude = Math.floor((Math.random() * 100) + 1);
    
-});
+//});
 
 // Create a new subscription
 bitdog.addSubscription('*', 'Position', 'add', function (message, configuration, logger) {
@@ -29,17 +29,21 @@ bitdog.addSubscription('*', 'Position', 'add', function (message, configuration,
 });
 
 
-// When the connection is ready
+// When the connection is ready start sending messages to IFTTT every 15 minutes
 bitdog.on('ready', function (logger, configuration) {
     
-    setInterval(function () {
-        isOn = !isOn;
-        bitdog.sendCommand('bfed21e0-6822-423e-a1f4-3b4d98bdc2cf', 'Turn light on/off', bitdog.commonMessageSchemas.onOffMessageSchema, function (message) {
-            message.value = isOn ? 'off' : 'on';
-        });
+    //setInterval(function () {
+        
+
+    //    bitdog.sendIFTTTCommand('f9a6e545-b6e7-4d23-9d27-4d5c583a218e','button_pressed',function (message) {
+    //        message.value1 = 'test1';
+    //        message.value2 = 'test2';
+    //        message.value3 = 'test3';
+
+    //    });
 
 
-    }, 15000);
+    //},15 * 60000);
   
 });
 
