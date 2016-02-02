@@ -78,3 +78,4 @@ obj
 *.dll
 *.suo
 
+.vs/config/applicationhost.config
