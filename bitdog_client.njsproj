@@ -58,6 +58,7 @@
     <Compile Include="lib\commonMessageSchemas.js" />
     <Compile Include="lib\connection.js" />
     <Compile Include="lib\dataInterface.js" />
+    <Compile Include="lib\pkginfo.js" />
     <Compile Include="lib\processConnection.js" />
     <Compile Include="lib\signalRConnection.js" />
     <Compile Include="lib\agentProcess.js" />
