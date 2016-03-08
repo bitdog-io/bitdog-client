@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Retrieve the bitdog interface
 var bitdog = require('../lib/bitdog.js');
@@ -31,7 +31,8 @@ bitdog.addSubscription('*', 'Position', 'add', function (message, configuration,
 
 // When the connection is ready start sending messages to IFTTT every 15 minutes
 bitdog.on('ready', function (logger, configuration) {
-    
+
+
     //setInterval(function () {
         
 
