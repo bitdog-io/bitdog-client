@@ -79,3 +79,4 @@ obj
 *.suo
 
 .vs/config/applicationhost.config
+/bitdog_client.sdf
