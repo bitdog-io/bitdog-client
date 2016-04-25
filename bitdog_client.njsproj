@@ -37,23 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="examples\example.js" />
-    <Compile Include="lib\admin\expressapp.js" />
     <Compile Include="lib\admin\managers\adminManager.js" />
-    <Compile Include="lib\admin\public\javascripts\statusUpdateController.js" />
-    <Compile Include="lib\admin\public\javascripts\validator.js" />
-    <Compile Include="lib\admin\routes\api.js" />
-    <Compile Include="lib\admin\routes\logoff.js" />
-    <Compile Include="lib\admin\routes\manage.js" />
-    <Compile Include="lib\admin\routes\changePassword.js" />
-    <Compile Include="lib\admin\routes\context.js" />
-    <Compile Include="lib\admin\routes\home.js" />
-    <Compile Include="lib\admin\routes\login.js" />
-    <Compile Include="lib\admin\routes\notfound.js" />
-    <Compile Include="lib\admin\routes\register.js" />
-    <Compile Include="lib\agent\agentServer.js" />
-    <Compile Include="lib\agent\session.js" />
-    <Compile Include="lib\cli\cliServer.js" />
-    <Compile Include="lib\cli\expressapp.js" />
     <Compile Include="lib\commandInterface.js" />
     <Compile Include="lib\commonMessageSchemas.js" />
     <Compile Include="lib\connection.js" />
@@ -61,11 +45,8 @@
     <Compile Include="lib\pkginfo.js" />
     <Compile Include="lib\processConnection.js" />
     <Compile Include="lib\signalRConnection.js" />
-    <Compile Include="lib\agentProcess.js" />
     <Compile Include="lib\userCodeProcess.js" />
-    <Compile Include="lib\userCode\userCodeServer.js" />
     <Compile Include="lib\webAdminProcess.js" />
-    <Compile Include="lib\admin\webserver.js" />
     <Compile Include="lib\bitdog.js" />
     <Compile Include="lib\configuration.js" />
     <Compile Include="lib\command.js" />
@@ -93,15 +74,6 @@
     <Content Include="docs\dataMessage.md" />
     <Content Include="docs\protocol.md" />
     <Content Include="docs\subscriptionMessage.md" />
-    <Content Include="lib\admin\public\images\logo.png" />
-    <Content Include="lib\admin\public\stylesheets\style.css" />
-    <Content Include="lib\admin\views\error.ejs" />
-    <Content Include="lib\admin\views\changePassword.ejs" />
-    <Content Include="lib\admin\views\manage.ejs" />
-    <Content Include="lib\admin\views\home.ejs" />
-    <Content Include="lib\admin\views\layout.ejs" />
-    <Content Include="lib\admin\views\login.ejs" />
-    <Content Include="lib\admin\views\register.ejs" />
     <Content Include="log\log.txt" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -112,15 +84,6 @@
     <Folder Include="lib\" />
     <Folder Include="lib\admin\" />
     <Folder Include="lib\admin\managers\" />
-    <Folder Include="lib\admin\public\" />
-    <Folder Include="lib\admin\public\images\" />
-    <Folder Include="lib\admin\public\javascripts\" />
-    <Folder Include="lib\admin\public\stylesheets\" />
-    <Folder Include="lib\admin\routes\" />
-    <Folder Include="lib\admin\views\" />
-    <Folder Include="lib\cli\" />
-    <Folder Include="lib\agent\" />
-    <Folder Include="lib\userCode\" />
     <Folder Include="examples\" />
     <Folder Include="log\" />
     <Folder Include="docs\" />
