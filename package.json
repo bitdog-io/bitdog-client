@@ -34,6 +34,6 @@
     "nconf": "^0.8.4",
     "node-uuid": "^1.4.7",
     "temp": "^0.8.3",
-    "signalr-client-forked": "0.0.17"
+    "signalr-client-forked": "^0.0.18"
   }
 }
