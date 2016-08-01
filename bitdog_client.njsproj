@@ -74,10 +74,10 @@
     <Content Include="docs\dataMessage.md" />
     <Content Include="docs\protocol.md" />
     <Content Include="docs\subscriptionMessage.md" />
-    <Content Include="log\log.txt" />
+    <Content Include="logs\README.md" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="run\run.txt" />
+    <Content Include="run\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -85,7 +85,7 @@
     <Folder Include="lib\admin\" />
     <Folder Include="lib\admin\managers\" />
     <Folder Include="examples\" />
-    <Folder Include="log\" />
+    <Folder Include="logs\" />
     <Folder Include="docs\" />
     <Folder Include="run\" />
     <Folder Include="typings\" />
