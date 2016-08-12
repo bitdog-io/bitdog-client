@@ -1,5 +1,5 @@
 {
-  "auth_key": "",
+  "auth_key": "5f4af12d-1216-49d5-8c87-1a11133751ef",
   "logging": {
     "log_messages": true,
     "log_connection_events": true,
@@ -12,5 +12,5 @@
     "username": "admin",
     "password_hash": "sha512$1ecbdaf6c78e519e11746269c53a28861497611f517ee04a58221268ea2d58ae$4096$57022691166bfc94582290936f19aae79a15bca1bf86a3136a0965b499e964a29041fe9f0e8c277d854acf032b51471b882fcfa60c578a2092735c116f84ee2e"
   },
-  "node_id": ""
+  "node_id": "c6c6c347-3fcc-40bc-9ce1-c7b3b2631379"
 }
