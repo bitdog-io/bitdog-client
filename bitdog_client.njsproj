@@ -90,10 +90,22 @@
     <Folder Include="run\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\commander\" />
+    <Folder Include="typings\globals\logrotate-stream\" />
+    <Folder Include="typings\globals\moment\" />
+    <Folder Include="typings\globals\nconf\" />
+    <Folder Include="typings\globals\node-uuid\" />
     <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\temp\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\commander\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\logrotate-stream\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\moment\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\nconf\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node-uuid\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\temp\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
