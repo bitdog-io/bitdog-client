@@ -31,7 +31,6 @@
     "jsr-pattern": "^0.2.3",
     "logrotate-stream": "^0.2.5",
     "moment": "^2.13.0",
-    "native-password-hash": "^1.1.0",
     "nconf": "^0.8.4",
     "node-uuid": "^1.4.7",
     "signalr-client-forked": "0.0.20",
