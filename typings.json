@@ -4,7 +4,7 @@
     "logrotate-stream": "registry:dt/logrotate-stream#0.0.0+20160317120654",
     "moment": "registry:dt/moment#2.11.1+20161010105546",
     "nconf": "registry:dt/nconf#0.0.0+20160724073144",
-    "node": "registry:dt/node#7.0.0+20170204020307",
+    "node": "registry:dt/node#7.0.0+20170310052549",
     "node-uuid": "registry:dt/node-uuid#0.0.0+20160316155526",
     "temp": "registry:dt/temp#0.8.3+20160105142454"
   }
