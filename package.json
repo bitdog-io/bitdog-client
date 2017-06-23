@@ -1,6 +1,6 @@
 {
   "name": "bitdog-client",
-  "version": "0.0.55",
+  "version": "0.0.56",
   "description": "Monitor and control your IoT devices.",
   "main": "./lib/bitdog.js",
   "keywords": "iot raspberry pi arduino yun edison things robot automation sensor motor controller servo camera johnny-five weaved",

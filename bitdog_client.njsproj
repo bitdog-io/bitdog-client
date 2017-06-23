@@ -45,6 +45,7 @@
     <Compile Include="lib\pkginfo.js" />
     <Compile Include="lib\processConnection.js" />
     <Compile Include="lib\signalRConnection.js" />
+    <Compile Include="lib\transactionTracker.js" />
     <Compile Include="lib\userCodeProcess.js" />
     <Compile Include="lib\webAdminProcess.js" />
     <Compile Include="lib\bitdog.js" />
