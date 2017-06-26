@@ -33,7 +33,7 @@
     "moment": "^2.13.0",
     "nconf": "^0.8.4",
     "node-uuid": "^1.4.7",
-    "signalr-client-forked": "git+https://github.com/bitdog-io/signalr-client-forked.git",
+    "signalr-client-forked": "git+https://github.com/bitdog-io/signalr-client-nodejs-forked.git",
     "temp": "^0.8.3"
   }
 }
