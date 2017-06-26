@@ -1,6 +1,6 @@
 {
   "name": "bitdog-client",
-  "version": "0.0.57",
+  "version": "0.0.58",
   "description": "Monitor and control your IoT devices.",
   "main": "./lib/bitdog.js",
   "keywords": "iot raspberrypi zwave robot automation sensor motor controller servo camera johnny-five weaved",
@@ -33,7 +33,7 @@
     "moment": "^2.13.0",
     "nconf": "^0.8.4",
     "node-uuid": "^1.4.7",
-    "signalr-client-forked": "git+https://github.com/bitdog-io/signalr-client-nodejs-forked.git",
+    "signalr-client-forked": "^0.0.21",
     "temp": "^0.8.3"
   }
 }
