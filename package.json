@@ -1,6 +1,6 @@
 {
   "name": "bitdog-client",
-  "version": "0.0.62",
+  "version": "0.0.63",
   "description": "Monitor and control your IoT devices.",
   "main": "./lib/bitdog.js",
   "keywords": "iot raspberrypi zwave robot automation sensor motor controller servo camera johnny-five weaved",
