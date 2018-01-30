@@ -68,13 +68,6 @@
     <None Include=".npmignore" />
     <Content Include="bin\bitdog" />
     <Content Include="bin\config.json" />
-    <Content Include="docs\registerMessage.md" />
-    <Content Include="docs\commandMessage.md" />
-    <Content Include="docs\configurationMessage.md" />
-    <Content Include="docs\pairMessage.md" />
-    <Content Include="docs\dataMessage.md" />
-    <Content Include="docs\protocol.md" />
-    <Content Include="docs\subscriptionMessage.md" />
     <Content Include="logs\README.md" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -87,7 +80,6 @@
     <Folder Include="lib\admin\managers\" />
     <Folder Include="examples\" />
     <Folder Include="logs\" />
-    <Folder Include="docs\" />
     <Folder Include="run\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
