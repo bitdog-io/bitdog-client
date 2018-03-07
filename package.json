@@ -1,9 +1,9 @@
 {
   "name": "bitdog-client",
-  "version": "0.0.68",
+  "version": "0.0.69",
   "description": "Monitor and control your IoT devices.",
   "main": "./lib/bitdog.js",
-  "keywords": "iot raspberrypi zwave  automation sensor camera ",
+  "keywords": [ "iot","raspberrypi", "zwave",  "home automation", "sensor", "camera" ],
   "author": {
     "name": "Bitdog LLC",
     "email": "support@bitdog.io"
