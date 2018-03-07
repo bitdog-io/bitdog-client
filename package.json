@@ -1,12 +1,12 @@
 {
   "name": "bitdog-client",
-  "version": "0.0.65",
+  "version": "0.0.66",
   "description": "Monitor and control your IoT devices.",
   "main": "./lib/bitdog.js",
-  "keywords": "iot raspberrypi zwave robot automation sensor motor controller servo camera johnny-five weaved",
+  "keywords": "iot raspberrypi zwave  automation sensor camera ",
   "author": {
     "name": "Bitdog LLC",
-    "email": "vjm@bitdog.io"
+    "email": "support@bitdog.io"
   },
   "license": "GPL-3.0",
   "engines": {
